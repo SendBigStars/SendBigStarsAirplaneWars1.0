@@ -210,6 +210,10 @@ void GameDraw() {
 	outtextxy(10, 10, tempscore);
 	sprintf(tempscore, "生命值: %d", SendBigStars.hp);
 	outtextxy(100, 10, tempscore);
+	if (SendBigStars.un.score == 520) {
+		sprintf(tempscore, "我爱酱酱");
+		outtextxy(100, 10, tempscore);
+	}
 }
 
 void Play() {
